@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TT6HJGXSXW"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-TT6HJGXSXW');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/zerostored.css" />
+    <script src="libs/pako.min.js"></script>
+    <script src="libs/sweetalert2@11.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('mindmap-icon').addEventListener('click', function() { window.location.href = document.getElementById('mindmap-link').href; });
+            document.getElementById('uml-icon').addEventListener('click', function() { window.location.href = document.getElementById('uml-link').href; });
+            document.getElementById('hash-icon').addEventListener('click', function() { window.location.href = document.getElementById('hash-link').href; });
+            document.getElementById('diff-icon').addEventListener('click', function() { window.location.href = document.getElementById('diff-link').href; });
+            document.getElementById('encoder-icon').addEventListener('click', function() { window.location.href = document.getElementById('encoder-link').href; });
+            document.getElementById('binary-icon').addEventListener('click', function() { window.location.href = document.getElementById('binary-link').href; });
+        });
+        </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6621204958275027"
+     crossorigin="anonymous"></script>
+    <title>Zero stored</title>
+</head>
+<body>
+    <div class="header">
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="/index.html" class="navbar-brand">zero-stored</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <div class="header-item">
+                                <img src="/svg/layers.svg">
+                                <a class="header-a" href="/mindmap.html">MindMap</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="header-item">
+                                <img src="/svg/line-chart.svg">
+                                <a class="header-a" href="/uml.html">UML</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="header-item">
+                                <img src="/svg/hash.svg">
+                                <a class="header-a" href="/hash.html">Hash</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="header-item">
+                                <img src="/svg/arrow-horizontal.svg">
+                                <a class="header-a" href="/diff.html">Diff</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="header-item">
+                                <img src="/svg/shuffle.svg">
+                                <a class="header-a" href="/encode.html">Encoder</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="header-item">
+                                <img src="/svg/apps-alt.svg">
+                                <a class="header-a" href="/binary.html">BinaryEditor</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="header-item">
+                                <img src="/svg/envelope.svg">
+                                <a class="header-a" href="https://github.com/zero-stored">Contact</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="main-container">
+        <div class="ad left">
+            
+        </div>
+        <div class="content">
+            <h2>Zero stored</h2>
+            <p>社内LANなどで外部Webサービスが自由に使えない人や、他社を含むZoom会議でちゃんとした資料を作るのも面倒だと思う人向け</p>
+            <p>githubの静的サービスを利用していて、サーバに情報を送らずブラウザ上だけで完結しています。</p>
+            <div class="link-container-top">
+                <div class="link-item">
+                    <img id="mindmap-icon" class="icon" src="/svg/gray-layers.svg">
+                    <a id="mindmap-link" class="link" href="/mindmap.html">MindMap</a>
+                </div>
+                <div class="link-item">
+                    <img id="uml-icon" class="icon" src="/svg/gray-line-chart.svg">
+                    <a id="uml-link" class="link" href="/uml.html">UML</a>
+                </div>
+                <div class="link-item">
+                    <img id="hash-icon" class="icon" src="/svg/gray-hash.svg">
+                    <a id="hash-link" class="link" href="/hash.html">Hash</a>
+                </div>
+            </div>            
+            <div class="link-container-bottom">
+                <div class="link-item">
+                    <img id="diff-icon" class="icon" src="/svg/gray-swap-horizontal.svg">
+                    <a id="diff-link" class="link" href="/diff.html">Diff</a>
+                </div>
+                <div class="link-item">
+                    <img id="encoder-icon" class="icon" src="/svg/gray-shuffle.svg">
+                    <a id="encoder-link" class="link" href="/encode.html">Encoder</a>
+                </div>
+                <div class="link-item">
+                    <img id="binary-icon" class="icon" src="/svg/gray-apps-alt.svg">
+                    <a id="binary-link" class="link" href="/binary.html">BinaryEditor</a>
+                </div>
+            </div>
+        </div>
+        <div class="ad right">
+            
+        </div>
+    </div>
+    <footer class="footer">&copy; 2025 --  zero-stored project</footer>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TT6HJGXSXW"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-TT6HJGXSXW');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="encode/css/encode.css" />
+    <script src="libs/sweetalert2@11.js"></script>
+    <script src="encode/libs/base32.js"></script>
+    <script src="encode/libs/base58.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6621204958275027" crossorigin="anonymous"></script>
+    <title>Encode</title>
+</head>
+<body>
+    <div class="header">
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="/index.html" class="navbar-brand">zero-stored</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <div class="header-item">
+                                <img src="/svg/layers.svg">
+                                <a class="header-a" href="/mindmap.html">MindMap</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="header-item">
+                                <img src="/svg/line-chart.svg">
+                                <a class="header-a" href="/uml.html">UML</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="header-item">
+                                <img src="/svg/hash.svg">
+                                <a class="header-a" href="/hash.html">Hash</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="header-item">
+                                <img src="/svg/arrow-horizontal.svg">
+                                <a class="header-a" href="/diff.html">Diff</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="header-item">
+                                <img src="/svg/shuffle.svg">
+                                <a class="header-a" href="/encode.html">Encoder</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="header-item">
+                                <img src="/svg/apps-alt.svg">
+                                <a class="header-a" href="/binary.html">BinaryEditor</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="header-item">
+                                <img src="/svg/envelope.svg">
+                                <a class="header-a" href="https://github.com/zero-stored">Contact</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="ad left">
+            
+        </div>
+        <div class="content">
+            <button id="helpButton">
+                <img src="svg/help.svg" alt="Help">
+            </button>
+            <div class="text-container">
+                <div class="editor-container">
+                    <div class="nomarl-area">
+                        <h5>Plain Text</h5>
+                        <textarea id="normalText" spellcheck="false"></textarea>
+                    </div>
+                </div>
+                <div class="encode-area">
+                    <div class="encode-item">
+                        <h5>URL Encode</h5>
+                        <textarea id="urlText" spellcheck="false"></textarea>
+                    </div>
+                    <div class="encode-item">
+                        <h5>BASE64</h5>
+                        <textarea id="base64Text" spellcheck="false"></textarea>
+                    </div>
+                    <div class="encode-item">
+                        <h5>BASE58</h5>
+                        <textarea id="base58Text" spellcheck="false"></textarea>
+                    </div>
+                    <div class="encode-item">
+                        <h5>BASE32</h5>
+                        <textarea id="base32Text" spellcheck="false"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="separate-line"></div> 
+        </div>
+        <div class="ad right">
+            
+        </div>
+    </div>
+    <div id="popup" class="popup">
+        <div class="popup-header">
+            使い方
+            <span id="closeButton" class="close-button">&times;</span>
+        </div>
+        <div class="popup-content">
+            Zero storedプロジェクトへようこそ！<br>
+            このサイトは静的サイトです。サーバー側に情報を送信することは一切ありません。<br>
+            <br>
+        </div>
+    </div>
+    <footer class="footer">&copy; 2025 --  zero-stored project</footer>
+    <script  type="module" src="encode/scripts/encode.js"></script>
+</body>
+</html>
+

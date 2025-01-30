@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TT6HJGXSXW"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-TT6HJGXSXW');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="mindmap/css/mindmap.css" />
+    <script src="libs/pako.min.js"></script>
+    <script src="libs/sweetalert2@11.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6621204958275027" crossorigin="anonymous"></script>
+    <title>Mind Map</title>
+</head>
+<body>
+    <div class="header">
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="/index.html" class="navbar-brand">zero-stored</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <div class="header-item">
+                                <img src="/svg/layers.svg">
+                                <a class="header-a" href="/mindmap.html">MindMap</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="header-item">
+                                <img src="/svg/line-chart.svg">
+                                <a class="header-a" href="/uml.html">UML</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="header-item">
+                                <img src="/svg/hash.svg">
+                                <a class="header-a" href="/hash.html">Hash</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="header-item">
+                                <img src="/svg/arrow-horizontal.svg">
+                                <a class="header-a" href="/diff.html">Diff</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="header-item">
+                                <img src="/svg/shuffle.svg">
+                                <a class="header-a" href="/encode.html">Encoder</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="header-item">
+                                <img src="/svg/apps-alt.svg">
+                                <a class="header-a" href="/binary.html">BinaryEditor</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="header-item">
+                                <img src="/svg/envelope.svg">
+                                <a class="header-a" href="https://github.com/zero-stored">Contact</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="ad"></div>
+        <div class="canvas-container" id="canvasContainer">
+            <button class="toggle-button">Mode: Move</button>
+            <canvas id="drawingCanvas" width="5000" height="5000"></canvas>
+            <input type="text" class="input-box" id="inputBox"/>
+            <div class="radial-menu" id="radialMenu">
+                <div class="menu-item top-left" id="radialMove">move</div>
+                <div class="menu-item top-right" id="radialDelete">delete</div>
+                <div class="menu-item bottom-left" id="radialLine">line</div>
+                <div class="menu-item bottom-right" id="radialElipse">elipse</div>
+            </div>
+            <div class="urlArea">
+                <input id="urlAreaInputBox">
+                <button id="copyButton">
+                    <img src="svg/copy.svg" alt="Copy">
+                </button>
+                <button id="reloadButton">
+                    <img src="svg/reload.svg" alt="Reload">
+                </button>
+            </div>
+            <button id="helpButton">
+                <img src="svg/help.svg" alt="Help">
+            </button>
+        </div>
+        <div class="ad"></div>
+    </div>
+    <div id="popup" class="popup">
+        <div class="popup-header">
+            使い方
+            <span id="closeButton" class="close-button">&times;</span>
+        </div>
+        <div class="popup-content">
+            Zero storedプロジェクトへようこそ！<br>
+            このサイトは静的サイトです。サーバー側に情報を送信することは一切ありません。<br>
+            また、右上のURLを共有することで、この画面と同じ情報を簡単に復元できます。<br>
+            <br>
+            <br>
+            <h3>1. モードについて</h3>
+            以下の4つのモードがあります：<br>
+            <h4>Move モード:  </h4>          
+            テキストと楕円を移動可能です。<br>
+            ノードやエッジをドラッグして位置を変更できます。<br>
+            <h4>Line モード:</h4>
+            テキスト同士をドラッグすることで線を引けます。<br>
+            ノード間にエッジを作成し、繋がりを表現します。<br>
+            <h4>Elipse モード:</h4>
+            ドラッグにより楕円を描画できます。<br>
+            新しいノードを作成する際に使用します。<br>
+            <h4>Delete モード:</h4>
+            テキストと楕円を削除可能です。<br>
+            不要なノードやエッジを削除します。<br>
+            <br><br>
+            <h3>2. モードの切り替え</h3>
+            <h4>右上のModeボタンをクリック:</h4>
+            クリックすることでモードを変更できます。<br>
+            現在のモードが表示されるので、確認しながら操作できます。<br>
+            <h4>左クリックを長押し:</h4>
+            左クリックを長押しすることでモードを素早く切り替えられます。<br>
+            シームレスに作業を続けることができます。<br>
+        </div>
+    </div>
+    <footer class="footer">&copy; 2025 --  zero-stored project</footer>
+    <script  type="module" src="mindmap/scripts/mindmap.js"></script>
+</body>
+</html>
+

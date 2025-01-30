@@ -1,0 +1,111 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.header {
+    height: 50px;
+}
+.header-item {
+    padding-left: 30px;
+    display: flex;
+}
+.header-item a {
+    padding-top: 15px;
+}
+.header-item img {
+    padding-top: 15px;
+    width: 40px;
+    height: 40px;
+}
+
+.header-a {
+    color: white;
+}
+
+.main-container {
+    display: flex;
+    width: 100%;
+    height: calc(100% - 80px); /* Adjust height based on header and footer */
+    position: relative;
+}
+
+.ad {
+    background-color: #f0f0f0;
+    width: 10%; /* 広告エリアの幅を全体の15%に設定 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.main-container {
+    display: flex;
+    width: 100%;
+    height: calc(100% - 80px); /* Adjust height based on header and footer */
+    position: relative;
+}
+
+.ad {
+    background-color: #f0f0f0;
+    width: 10%; /* 広告エリアの幅を全体の15%に設定 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.content {
+    width: 80%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+}
+
+.link-container-top {
+    padding-top: 100px;
+    display: flex;
+    gap: 50px; 
+}
+.link-container-bottom {
+    padding-top: 10px;
+    display: flex;
+    gap: 50px; 
+}
+
+.link-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 50px;
+}
+
+.icon {
+    width: 100px; 
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.link {
+    font-size: 24px; 
+    color: #007BFF; 
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.link:hover {
+    color: #0056b3;
+}
+
+h2 {
+    margin: 20px;
+    margin-bottom: 40px;
+}

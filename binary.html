@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TT6HJGXSXW"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-TT6HJGXSXW');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="binary/css/binary.css" />
+    <script src="libs/sweetalert2@11.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6621204958275027" crossorigin="anonymous"></script>
+    <title>BinaryEditor</title>
+</head>
+<body>
+    <div class="header">
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="/index.html" class="navbar-brand">zero-stored</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <div class="header-item">
+                                <img src="/svg/layers.svg">
+                                <a class="header-a" href="/mindmap.html">MindMap</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="header-item">
+                                <img src="/svg/line-chart.svg">
+                                <a class="header-a" href="/uml.html">UML</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="header-item">
+                                <img src="/svg/hash.svg">
+                                <a class="header-a" href="/hash.html">Hash</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="header-item">
+                                <img src="/svg/arrow-horizontal.svg">
+                                <a class="header-a" href="/diff.html">Diff</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="header-item">
+                                <img src="/svg/shuffle.svg">
+                                <a class="header-a" href="/encode.html">Encoder</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="header-item">
+                                <img src="/svg/apps-alt.svg">
+                                <a class="header-a" href="/binary.html">BinaryEditor</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="header-item">
+                                <img src="/svg/envelope.svg">
+                                <a class="header-a" href="https://github.com/zero-stored">Contact</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="main-container">
+        <div class="ad left">
+            
+        </div>
+        <div class="content">
+            <button class="toggle-button">Mode: Overwrite</button>
+            <button id="helpButton">
+                <img src="svg/help.svg" alt="Help">
+            </button>
+            <button id="downloadButton">
+                <img src="svg/download.svg" alt="Download">
+                <span>download binary</span>
+            </button>
+            <input id="findHexInputBox" placeholder="search(hex)">
+            <input id="findTextInputBox" placeholder="search(text)">
+            <div id="findWord"></div>
+            <div class="bin-container" id="binContainer">
+                <div class="bin-address" id="binAddress"></div>
+                <div class="bin-editor" id="binEditor"> <div><br></div><div><br></div><div><br></div>Drag & Drop </div>
+                <div class="bin-ascii" id="binAscii"></div>
+            </div>
+        </div>
+        <div class="ad right">
+            
+        </div>
+    </div>
+    <div id="popup" class="popup">
+        <div class="popup-header">
+            使い方
+            <span id="closeButton" class="close-button">&times;</span>
+        </div>
+        <div class="popup-content">
+            Zero storedプロジェクトへようこそ！<br>
+            このサイトは静的サイトです。サーバー側に情報を送信することは一切ありません。<br>
+            <br>
+            <br>
+            現在256KBまでのデータに対応しています。<br>        
+            [overwrite]モードでは、選択した位置のデータを書き換えることができます。<br>        
+            [insert]モードでは、選択した位置にhexを追加可能です。<br>  
+            <br>
+            <br>
+            検索ボックスに入力することで、hexとasciiの検索可能です。
+            <br>
+            修正後のバイナリは[download binary]ボタンでダウンロードできます。
+        </div>
+    </div>
+    <div id="loadingPopup" class="popup">
+        <div class="popup-content">
+            <p id="loading-text">Now Loading<span>.</span><span>.</span><span>.</span></p>
+        </div>
+    </div>
+    <footer class="footer">&copy; 2025 --  zero-stored project</footer>
+    <script  type="module" src="binary/scripts/binary.js"></script>
+</body>
+</html>
+

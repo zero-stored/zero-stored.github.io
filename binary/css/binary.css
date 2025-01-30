@@ -1,0 +1,267 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.header {
+    height: 50px;
+}
+.header-item {
+    padding-left: 30px;
+    display: flex;
+}
+.header-item a {
+    padding-top: 15px;
+}
+.header-item img {
+    padding-top: 15px;
+    width: 40px;
+    height: 40px;
+}
+
+.header-a {
+    color: white;
+}
+
+.main-container {
+    display: flex;
+    width: 100%;
+    height: calc(100% - 80px); 
+    position: relative;
+}
+
+.ad {
+    background-color: #f0f0f0;
+    width: 10%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.content {
+    width: 80%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    height: 100%;
+}
+
+.bin-container {
+    display: flex;
+    justify-content: space-between;
+    width: 950px;
+    margin: 0 auto;
+    margin-top: 40px;
+    height: 95%;
+    font-family: 'Courier New', Courier, monospace;
+    justify-content: center;
+    text-align: center;
+    overflow-y: scroll;
+}
+
+.bin-address {
+    width: 80px;
+    background-color: #ccc;
+}
+.bin-editor {
+    display: flex;
+    width: 560px;
+    flex-direction: column;
+    border: 1px solid gray;
+}
+.bin-ascii {
+    display: flex;
+    width: 300px;
+    background-color: #ccc;
+    flex-direction: column;
+}
+
+.bin-line {
+    display: flex;
+}
+
+.bin {
+    padding-left:10px;
+    padding-right:10px;
+    white-space: pre;
+    font-family: monospace; 
+}
+
+.select-bin {
+    padding-left:10px;
+    padding-right:10px;
+    white-space: pre;
+    font-family: monospace; 
+    background-color: skyblue;
+}
+
+.find-bin {
+    padding-left:10px;
+    padding-right:10px;
+    white-space: pre;
+    font-family: monospace; 
+    background-color: lightgreen;
+}
+
+.ascii-line {
+    display: flex;
+}
+
+.ascii {
+    padding-left:4px;
+    padding-right:4px;
+    white-space: pre;
+    font-family: monospace; 
+}
+.select-ascii {
+    padding-left:5px;
+    padding-right:5px;
+    white-space: pre;
+    font-family: monospace; 
+    background-color: pink;
+}
+.find-ascii {
+    padding-left:5px;
+    padding-right:5px;
+    white-space: pre;
+    font-family: monospace; 
+    background-color: lightgreen;
+}
+
+.separate{
+    margin: 0 5px;
+}
+
+.footer {
+    background-color: 'white';
+    text-align: left;
+    padding-left: 30px;
+    border-top: 1px solid #707172;
+    margin: 5px;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 10px;
+    left: 80px;
+    z-index: 10;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+#downloadButton
+{
+    position: absolute;
+    background-color: white;
+    border: none;
+    bottom: 5%;
+    right: 5%;
+}
+#findHexInputBox
+{
+    position: absolute;
+    border: none;
+    top: 200px;
+    right: 20px;
+    border: 1px solid black;
+}
+#findWord{
+    position: absolute;
+    border: none;
+    top: 230px;
+    right: 20px;
+}
+#findTextInputBox
+{
+    position: absolute;
+    border: none;
+    top: 270px;
+    right: 20px;
+    border: 1px solid black;
+}
+
+@keyframes wave {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+}
+
+#loading-text {
+display: inline-block;
+}
+
+#loading-text span {
+display: inline-block;
+animation: wave 1.5s infinite;
+}
+
+#loading-text span:nth-child(1) { animation-delay: 0s; }
+#loading-text span:nth-child(2) { animation-delay: 0.1s; }
+#loading-text span:nth-child(3) { animation-delay: 0.2s; }
+  
+
+#helpButton
+{
+    position: absolute;
+    background-color: white;
+    border: none;
+    top: 20px;
+    left: 20px;
+}
+
+#helpButton:hover {
+    background-color: white;
+}
+#helpButton:active {
+    transform: translateY(2px);
+}
+#helpButton img {
+    background-color: white;
+    width: 30px;
+    height: 30px;
+}
+
+.popup {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: white;
+    border: 2px solid #ccc;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+.popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.close-button {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.popup-content {
+    margin-top: 10px;
+}
+
+  
