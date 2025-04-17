@@ -268,3 +268,15 @@ textarea {
 .popup-content {
     margin-top: 10px;
 }
+
+.CodeMirror {
+    height: 100%;
+    max-width: 30%;
+    width: 30%;
+    border: 1px solid #ccc;
+    font-family: monospace;
+    }
+.cm-operator {
+    color: red;
+    font-weight: bold;
+}

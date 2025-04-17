@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TT6HJGXSXW"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-TT6HJGXSXW');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="robocode/libs/CodeMirror/codemirror.min.css" />
+    <link rel="stylesheet" type="text/css" href="robocode/css/robocode.css" />
+    <script src="libs/pako.min.js"></script>
+    <script src="libs/sweetalert2@11.js"></script>
+    <script src="robocode/libs/CodeMirror/codemirror.min.js"></script>
+    <script src="robocode/libs/CodeMirror/javascript.min.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6621204958275027" crossorigin="anonymous"></script>
+    <title>robocode</title>
+</head>
+<body>
+    <div class="header">
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="/index.html" class="navbar-brand">zero-stored</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <div class="header-item">
+                                <img src="/svg/layers.svg">
+                                <a class="header-a" href="/mindmap.html">MindMap</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="header-item">
+                                <img src="/svg/line-chart.svg">
+                                <a class="header-a" href="/uml.html">UML</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="header-item">
+                                <img src="/svg/hash.svg">
+                                <a class="header-a" href="/hash.html">Hash</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="header-item">
+                                <img src="/svg/arrow-horizontal.svg">
+                                <a class="header-a" href="/diff.html">Diff</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="header-item">
+                                <img src="/svg/shuffle.svg">
+                                <a class="header-a" href="/encode.html">Encode</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="header-item">
+                                <img src="/svg/apps-alt.svg">
+                                <a class="header-a" href="/binary.html">BinaryEditor</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="header-item">
+                                <img src="/svg/robocode.svg">
+                                <a class="header-a" href="/robocode.html">Robocode</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="header-item">
+                                <img src="/svg/envelope.svg">
+                                <a class="header-a" href="https://github.com/zero-stored">Contact</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="ad left">
+            
+        </div>
+        <button id="helpButton">
+            <img src="svg/help.svg" alt="Help">
+        </button>
+        <div class="content">
+            <div class="tab-wrap">
+                <input id="tab01" type="radio" name="tab" class="tab-switch" checked="checked"><label class="tab-label" for="tab01">自機改造</label>
+                <div class="tab-content">
+                    <div class="edit-container">
+                        <div class="robot-area">                                
+                            <h4>myrobot.jsを改造し、自分だけのマシンを作成してください</h5>
+                            <div class="mycode-item">
+                                <div style="position: relative;">
+                                    <b>mycode.js</b>
+                                    <a id="initCodeButton" href="#" class="btn btn-border"><span>初期化</span></a>
+                                </div>
+                                <h5>// Generated by LiveScript 1.2.0</h5>
+                                <h5>(function(){</h5>
+                                <textarea id="myRobotTextArea" spellcheck="false"></textarea>
+                                <h5>}).call(this);</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <input id="tab02" type="radio" name="tab" class="tab-switch"><label class="tab-label" for="tab02">全体ソースコード確認</label>
+                <div class="tab-content">
+                    <div class="view-container">
+                        <div class="src-list">
+                            <h4>ソースコード一覧</h4>
+                            <a href="#" class="src-view-button">Information.md</a>
+                            <a href="#" class="src-view-button">battle.js</a>
+                            <a href="#" class="src-view-button">log.js</a>
+                            <a href="#" class="src-view-button">base-robot.js</a>
+                            <a href="#" class="src-view-button">myrobot.js</a>
+                            <a href="#" class="src-view-button">enemy-0.js</a>
+                            <a href="#" class="src-view-button">enemy-1.js</a>
+                            <a href="#" class="src-view-button">enemy-2.js</a>
+                            <a href="#" class="src-view-button">enemy-3.js</a>
+                            <a href="#" class="src-view-button">enemy-4.js</a>
+                            <a href="#" class="src-view-button">enemy-5.js</a>
+                        </div>
+                        <div class="code-view-area">
+                            <p id="refSrcName">Infomation.md</p>
+                            <textarea id="baseRobotTextArea" spellcheck="false"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <input id="tab03" type="radio" name="tab" class="tab-switch"><label class="tab-label" for="tab03">出撃</label>
+                <div class="tab-content">
+                    <div class="battle-container">
+                        <div class="verify-code-area">
+                            <div class="verfiy-area">
+                                <h1>出撃準備</h1>
+                                <a id="verifyCodeButton" href="#" class="btn btn-border"><span>コード検証</span></a>
+                                <p id="verifyResult"></p>
+                            </div>
+                            <div id="myrobotArea" class="myrobot-introduce-area">
+                                <p>自分の機体</p>
+                                <img src="/robocode/img/tank/myrobot.png" alt="機体">
+                                <p>機体コード</p>
+                                <input id="machineCodeInputBox" readonly="True">
+                                <button id="copyButton">
+                                    <img src="svg/copy.svg" alt="Copy">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="ready-area">
+                            <div class="stage-container">
+                                <h2>ステージ選択</h2>
+                                <a href="#" id="stage1Button" class="stage-select-button">stage 1</a>
+                                <a href="#" id="stage2Button" class="stage-select-button">stage 2</a>
+                                <a href="#" id="stage3Button" class="stage-select-button">stage 3</a>
+                                <a href="#" id="stage4Button" class="stage-select-button">stage 4</a>
+                                <a href="#" id="stage5Button" class="stage-select-button">stage 5</a>
+                                <a href="#" id="stage6Button" class="stage-select-button">stage 6</a>
+                                <a href="#" id="stage7Button" class="stage-select-button">stage 7</a>
+                                <a href="#" id="stage8Button" class="stage-select-button">stage 8</a>
+                                <a href="#" id="stage9Button" class="stage-select-button">stage 9</a>
+                                <a href="#" id="stage10Button" class="stage-select-button">stage 10</a>
+                                <a href="#" id="stage11Button" class="stage-select-button">stage 11</a>
+                                <a href="#" id="stage12Button" class="stage-select-button">stage 12</a>
+                                <a href="#" id="stage13Button" class="stage-select-button">stage 13</a>
+                                <a href="#" id="stage14Button" class="stage-select-button">stage 14</a>
+                                <a href="#" id="stage15Button" class="stage-select-button">stage 15</a>
+                                <a href="#" id="stage16Button" class="stage-select-button">stage 16</a>
+                                <a href="#" id="stage17Button" class="stage-select-button">stage 17</a>
+                                <a href="#" id="stage18Button" class="stage-select-button">stage 18</a>
+                                <a href="#" id="stage19Button" class="stage-select-button">stage 19</a>
+                                <a href="#" id="stage20Button" class="stage-select-button">stage final</a>
+                                <br>
+                                <br>
+                                <br>
+                                <a href="#" id="stageCodeButton" class="stage-select-button">battle code enemy</a>
+                            </div>
+                            <div class="sortie-area">
+                                <h2>ステージ情報</h2>
+                                <h3 id="stageName">Stage:</h3>
+                                <h4>出現する敵</h4>
+                                <div id="stageDescription" ></div>
+                                <input id="enemyCodeInputBox" style="display: none;">
+                                <div class="sortieButtonArea">
+                                    <a id="sortieButton" href="#" class="btn btn-flat"><span>出撃！！</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ad right">
+            
+        </div>
+    </div>
+    <div id="popup" class="popup">
+        <div class="popup-header">
+            使い方
+            <span id="closeButton" class="close-button">&times;</span>
+        </div>
+        <div class="popup-content">
+            <h3>Zero storedプロジェクトへようこそ！</h3><br>
+            このサイトは静的サイトです。サーバー側に情報を送信することは一切ありません。<br>
+            <br>
+            このWebアプリは、JavaScriptの学習をゲーム感覚で体験できる「Robocode」のJavaScript版です。<br>
+            自分だけのロボットをプログラミングして、戦わせながらJavaScriptの基本やロジックを楽しく学びましょう！<br>
+            <br>
+            <h4>自機改造のやり方</h4><br>
+            「自機改造」タブでは myrobot.js を編集することで、自分のロボットの動きをカスタマイズできます。<br>        
+            myrobot.js は base-robot.js に定義されたBaseRobotクラスを継承しており、<br>  
+            onHit や onEnemySpot などの関数を上書き（オーバーライド）することで、ロボットの行動を変更できます。<br>  
+            <br>  
+            編集できるのは myrobot.js のみ！<br>  
+            他のソースコード（たとえば base-robot.js やシステム側のコード）は編集できません。<br>  
+            <br>  
+            <h4>コードの検証方法</h4><br>  
+            「出撃」タブにある 「コード検証」ボタン を押すと、あなたの書いた myrobot.js が正しく動作するかをチェックできます。<br>  
+            エラーがある場合は、内容を確認して修正してください。<br>  
+            <br>
+            <h5>敵の強さ 右に行くほど強い！</h5>
+            <img src="/robocode/img/tank/enemy-0.png" alt="enemy-0"> 
+            <img src="/robocode/img/tank/enemy-1.png" alt="enemy-1">
+            <img src="/robocode/img/tank/enemy-2.png" alt="enemy-2">
+            <img src="/robocode/img/tank/enemy-3.png" alt="enemy-3">
+            <img src="/robocode/img/tank/enemy-4.png" alt="enemy-4">
+            <img src="/robocode/img/tank/enemy-5.png" alt="enemy-5">
+            <br>
+            <br>
+            <br>
+            本アプリケーションは以下のライブラリを利用しています。<br>
+            <a>https://github.com/youchenlee/robocode-js</a><br>  
+        </div>
+    </div>
+    <footer class="footer">&copy; 2025 --  zero-stored project</footer>
+    <script  type="module" src="robocode/scripts/robocode.js"></script>
+
+</body>
+</html>
+
