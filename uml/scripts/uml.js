@@ -30,6 +30,12 @@ window.onload = async function() {
         indentUnit: 2,
         tabSize: 2,
         lineWrapping: true,
+        extraKeys: {
+          'Shift-Enter': async function(cm) {
+            graphDefinition = umlEditor.getValue().replace(/\r\n|\r/g, '\n').trim();
+            await renderMermaidGraph();
+          }
+        }
     });
     const graphContainer = document.getElementById('umlOutput');
     const popup = document.getElementById('popup');
@@ -189,14 +195,6 @@ window.onload = async function() {
             await renderMermaidGraph();
         } 
     }
-
-    umlEditor.on("change", async function(cm, changeObj) {
-        if (event.shiftKey && event.key === 'Enter') {
-            event.preventDefault(); 
-            graphDefinition = umlEditor.getValue().replace(/\r\n|\r/g, '\n').trim();
-            await renderMermaidGraph();
-        }
-    });
 
     document.getElementById('zoomInButton').addEventListener('click', () => {
         const svgElement = graphContainer.querySelector('svg');
