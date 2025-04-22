@@ -55,10 +55,10 @@ This software makes use of the following third-party libraries, which are also l
 6. **CodeMirror5**  
    - Source: https://github.com/codemirror/codemirror5
    - License: MIT License  
-     Refer to the LICENSE file included in the base58 project repository for the exact terms.
+     Refer to the LICENSE file included in the CodeMirror5 project repository for the exact terms.
 
 6. **robocode-js**  
    - Source: https://github.com/youchenlee/robocode-js
    - License: MIT License  
-     Refer to the LICENSE file included in the base58 project repository for the exact terms.
+     Refer to the LICENSE file included in the robocode-js project repository for the exact terms.
 
