@@ -117,7 +117,8 @@ window.onload = async function() {
     });
 
         downloadButton.addEventListener('click', () => {
-        const svgData = graphContainer.innerHTML;
+        let svgData = graphContainer.innerHTML;
+        svgData = svgData.replace(/16px/g, '12px');
         const blob = new Blob([svgData], { type: 'image/svg+xml;charset=utf-8' });
         const url = URL.createObjectURL(blob);
         const link = document.createElement('a');
